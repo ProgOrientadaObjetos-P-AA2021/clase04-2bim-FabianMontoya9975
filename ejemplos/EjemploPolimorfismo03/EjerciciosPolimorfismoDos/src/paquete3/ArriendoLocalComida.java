@@ -19,6 +19,14 @@ public class ArriendoLocalComida extends Arriendo {
         super(nombre, cuotaB);
     }
     
+    public ArriendoLocalComida(String nombre, double cuotaB,
+            double iv, double agua, double luz){
+        super(nombre, cuotaB);
+        iva = iv;
+        valorAgua = agua;
+        valorLuz = luz;
+    }
+    
     public void establecerValorLuz(double x){
         valorLuz = x;
     }

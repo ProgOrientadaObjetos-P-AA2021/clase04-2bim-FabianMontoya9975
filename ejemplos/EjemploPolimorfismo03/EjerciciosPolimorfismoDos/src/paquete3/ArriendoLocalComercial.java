@@ -18,6 +18,11 @@ public class ArriendoLocalComercial extends Arriendo {
     public ArriendoLocalComercial(String nombre, double cuotaB) {
         super(nombre, cuotaB);
     }
+    
+    public ArriendoLocalComercial(String nombre, double cuotaB, double valor) {
+        super(nombre, cuotaB);
+        valorAdicionalFijo = valor;
+    }
 
     @Override
     public void establecerNombreArrendatario(String nombre) {
